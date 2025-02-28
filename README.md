@@ -1,10 +1,10 @@
 ﻿# 80-s-Chatbot
-This is a recreation of 60's very famous chatbot **Eliza** \n
-To install it ->\n
-git clone [ssh-link]\n
-npm install\n
-npm run dev\n
+This is a recreation of 60's very famous chatbot **Eliza** <br>
+To install it -><br>
+git clone [ssh-link]<br>
+npm install<br>
+npm run dev<br>
 
-I have use vite as bundler\n
-base html, css, and js for frontend\n
+I have use vite as bundler<br>
+base html, css, and js for frontend<br>
 no backend
