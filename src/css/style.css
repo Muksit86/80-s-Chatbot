@@ -1,0 +1,123 @@
+.container {
+  width: 100%;
+  min-height: 100dvh;
+  position: relative;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  overflow: hidden;
+}
+.container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 255, 0, 0.1) 50%);
+  background-size: 100% 4px;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 1s infinite alternate;
+}
+/* Screen flicker effect */
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.95;
+  }
+}
+/* ------------------Welcome section css------------------ */
+.welcome-msg {
+  display: flex;
+  justify-content: center;
+}
+.welcome-msg h2 {
+  font-size: 25px;
+  margin-top: 37px;
+  margin-bottom: 0px;
+}
+
+/* ------------------Title section section css------------------ */
+.eliza-ascii {
+  display: flex;
+  justify-content: center;
+}
+.eliza-ascii h2 {
+  font-family: asciid;
+  font-size: 60px;
+  margin: 40px;
+}
+
+/* ------------------Introduction section section css------------------ */
+.pre-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.pre-text p {
+  margin: 10px 0px;
+}
+.pre-text .intro-text {
+  text-wrap: wrap;
+  text-align: center;
+  width: 30%;
+  line-height: 20px;
+}
+
+/* ------------------Chat area section section css------------------ */
+.text-area {
+  margin: 70px auto;
+  width: 95vw;
+}
+.text-area p {
+  font-size: 25px;
+}
+.chat {
+  display: flex;
+  align-items: center;
+  gap: 00px;
+}
+.user-input {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  font-size: 25px;
+  caret-color: green;
+  outline: none;
+}
+.text-area .custom-caret {
+  font-size: 25px;
+  font-style: italic;
+  width: 50px;
+}
+@keyframes blinking {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ------------------Clear button css------------------ */
+.clea-btn {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clea-btn button {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(56, 56, 242, 0.871);
+  border-radius: 10px;
+  cursor: pointer;
+}

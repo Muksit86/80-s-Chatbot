@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css" />
+    <link rel="stylesheet" href="./src/css/base.css" />
+    <title>Eliza's Bro</title>
+    <script defer type="module" src="./src/main.js"></script>
+    <script defer type="module" src="./src/style.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- ------------------Welcome msg------------------ -->
+      <div class="welcome-msg">
+        <h2>Welcome to,</h2>
+      </div>
+
+      <!-- ------------------Title section------------------ -->
+      <div class="eliza-ascii">
+        <h2>ELIZA's brother</h2>
+      </div>
+
+      <!-- ------------------Introduction section------------------ -->
+      <div class="pre-text">
+        <p class="pre-text-desktop">
+          ********************************************************************
+        </p>
+        <p class="intro-text">
+          ELIZA is an early natural language processing computer program
+          developed from 1964 to 1967 at MIT by
+          <a
+            style="font-style: italic"
+            href="https://en.wikipedia.org/wiki/Joseph_Weizenbaum"
+            target="_blank"
+            >Joseph Weizenbaum</a
+          >
+          this is a morden and worst reincarnation of it, be carefull it's very
+          rude by
+          <a
+            style="font-style: italic"
+            href="https://github.com/Muksit86"
+            target="_blank"
+            >Abdul Muksit</a
+          >
+        </p>
+        <p class="pre-text-desktop">
+          ********************************************************************
+        </p>
+      </div>
+
+      <!-- ------------------Chat area section------------------ -->
+      <div id="textArea" class="text-area">
+        <div class="chat eliza-part">
+          <p class="custom-caret">G:</p>
+          <p>Hello How are you doing</p>
+        </div>
+        <div class="chat user-part">
+          <p class="custom-caret">Y:</p>
+          <input class="user-input" type="text" value="" id="userInput" />
+        </div>
+      </div>
+
+      <div class="clea-btn">
+        <button>Clear</button>
+      </div>
+    </div>
+  </body>
+</html>
